@@ -1,20 +1,98 @@
 <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>DORIS'S PROJECT 2</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        
+        }
 
-<html>
-	<head>
-		<title>Project 1 All HTML</title>
-		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="main.css" />
-	</head>
-	
-	<body>
+        body{
+            max-height: 100vh;
+            background-color: #202020;
+            
+    
+        }
+        div{
+            min-height: 50vh;
+            min-width:50vh;
+            display:flex;
+            justify-content: center;
+            align-content:center;
+        }
 
-		<div class="main">
+    .text{
+        stroke:rgb(223, 167, 167);
+        fill:none;
+        stroke-width:6;
+        stroke-dasharray: 0,300;
+        stroke-dashoffset: 0;
+        font-size: 10em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .animals{}
+    .animals:nth-child(3n+1){
+     stroke:#8d1850;
+     animation: stroke1 3s cubic-bezier(0.4,0,0.2,1) forwards;
+    }
+    .animals:nth-child(3n+2){
+     stroke:#c73c7f;
+     animation: stroke2 3s cubic-bezier(0.4,0,0.2,1) forwards;
 
-			<h1>All HTML</h1>
-				
-				
-		</div>
-	
-	</body>
-</html>
+    }
+    .animals:nth-child(3n+3){
+     stroke:#da669e;
+     animation: stroke3 3s cubic-bezier(0.4,0,0.2,1) forwards;
+    }
+
+    @keyframes stroke1 {
+        100%{
+          stroke-dasharray: 40,80;
+          stroke-dashoffset: 220;
+        }
+    }
+
+    @keyframes stroke2 {
+    100%{
+        stroke-dasharray: 40,80;
+        stroke-dashoffset: 140;
+    }
+}
+
+@keyframes stroke3 {
+    100%{
+        stroke-dasharray: 40,80;
+        stroke-dashoffset: 40;
+    }
+}
+
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <svg viewBox="300 100 1700 1200"
+        height="850px"
+        version="1.5"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+ 
+        
+    <symbol id="text">
+        <text text-anchor=""middle"
+        x="50%"
+        y="50%"
+        dy=".35em"
+        >
+        代码真难写
+        </text>
+    </symbol>
+    <use xlink:href="#text"class="text animals"></use>
+    <use xlink:href="#text"class="text animals"></use>
+    <use xlink:href="#text"class="text animals"></use>
+    </svg>
+</div>
+</body>
