@@ -11,7 +11,7 @@
 
         body{
             max-height: 100vh;
-            background-color: #202020;
+            background-color: #000000;
             
     
         }
@@ -24,26 +24,26 @@
         }
 
     .text{
-        stroke:rgb(223, 167, 167);
+        stroke:rgb(181, 219, 233);
         fill:none;
         stroke-width:6;
         stroke-dasharray: 0,300;
         stroke-dashoffset: 0;
-        font-size: 10em;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucid
     }
     .animals{}
     .animals:nth-child(3n+1){
-     stroke:#8d1850;
+     stroke:#b7dbe9;
      animation: stroke1 3s cubic-bezier(0.4,0,0.2,1) forwards;
     }
     .animals:nth-child(3n+2){
-     stroke:#c73c7f;
+     stroke:#85aece;
      animation: stroke2 3s cubic-bezier(0.4,0,0.2,1) forwards;
 
     }
     .animals:nth-child(3n+3){
-     stroke:#da669e;
+     stroke:#cce8f3;
      animation: stroke3 3s cubic-bezier(0.4,0,0.2,1) forwards;
     }
 
@@ -74,8 +74,8 @@
 
 <body>
     <div>
-        <svg viewBox="300 100 1700 1200"
-        height="850px"
+        <svg viewBox="100 200 2000 1200"
+        height="1000px"
         version="1.5"
         xmlns="http://www.w3.org/2000/svg"
         >
@@ -83,12 +83,29 @@
         
     <symbol id="text">
         <text text-anchor=""middle"
-        x="50%"
-        y="50%"
-        dy=".35em"
+        x="20%"
+        y="40%"
+        dy=".25em"
         >
-        代码真难写
+        DO YOU 
         </text>
+
+        <text text-anchor=""middle"
+        x="40%"
+        y="65%"
+        dy=".25em"
+        >
+        HAVE A 
+        </text>
+   
+       <text text-anchor=""middle"
+        x="70%"
+        y="90%"
+        dy=".25em"
+        >
+        GOOD DAY?
+    </text>
+
     </symbol>
     <use xlink:href="#text"class="text animals"></use>
     <use xlink:href="#text"class="text animals"></use>
