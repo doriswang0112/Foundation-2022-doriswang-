@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,body {
+    height: 100%;
+  }
+  
+  body {
+    background-image: linear-gradient(to right,#bad3e1,#afb9d7,#78b4d6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+:root{
+	--second:  1s;
+	--minute: calc(var(--second)*60);
+	--hour: calc(var(--minute)*60);
+	--halfday:  calc(var(--hour)*12);
+	--setTimeHour:  1;
+	--setTimeMinute: 20;
+	--timeShiftHour:  calc(var(--setTimeHour)*var(--hour));
+	--timeShiftMinute: calc(var(--setTimeMinute)*var(--minute));
+}
+
+@keyframes rotate{
+	from{transform: rotate(0);}
+	to{transform: rotate(1turn);}
+}
+
+.seconds{
+	--width: 3px;
+	--height: 160px;
+	--background-color: rgb(139, 142, 217);
+	animation: rotate steps(60) var(--minute) infinite;
+}
+
+.minute{
+	--width: 7px;
+	--height: 110px;
+	--background-color: rgb(89, 89, 255);
+	animation: rotate steps(60) var(--hour) infinite;
+	animation-delay: calc(var(--timeShiftMinute)*-1);
+}
+
+
+.hour{
+	--width: 11px;
+	--height: 90px;
+	--background-color: rgb(183, 169, 250);
+	animation:  rotate steps(12) var(--halfday) infinite;
+	animation-delay: calc((var(--timeShiftHour) + var(--timeShiftMinute)) * -1);
+}
+
+.hand{
+	position: absolute;
+	left: calc(50% - var(--width)/2);
+	width: var(--width);
+	height: var(--height);
+	background-color: var(--background-color);
+	top: 50%;
+	transform-origin: center 0;
+	border-radius: calc(var(--width)/2);
+}
+
+.clockface{
+	width: 400px;
+	height: 400px;
+	border-radius: 100%;
+	position: center;
+	animation: background-color ease var(--minute) infinite;
+	transform: rotate(180deg);
+}
+
+@keyframes background-color{
+	from{background-color: rgb(226, 213, 249);}
+	to{background-color:  rgb(174, 174, 238)}
+}
