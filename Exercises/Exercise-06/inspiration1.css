@@ -1,0 +1,100 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 192, 192);
+}
+
+.text{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(245, 230, 207);
+    letter-spacing: 15px;
+    transform: rotate(-15deg)skew(20deg);
+    text-shadow: -1px 1px 0 rgb(233, 213, 158),
+    -2px 2px 0 rgb(224, 214, 122),
+    -3px 3px 0 rgb(240, 225, 144),
+    -4px 4px 0 rgb(240, 241, 142),
+    -5px 5px 0 rgb(245, 253, 199),
+    -6px 6px 0 rgb(255, 254, 172),
+    -7px 7px 0 rgb(253, 255, 145),
+    -8px 8px 0 rgb(221, 221, 221),
+    -9px 9px 0 #ddd,
+    -10px 10px 0 #ddd,
+    -11px 2px 0 #ddd,
+-12px 12px 0 #ddd,
+-13px 13px 0 #ddd,
+-14px 14px 0 #ddd,
+-15px 15px 0 #ddd,
+-16px 16px 0 #ddd,
+-17px 17px 0 #ddd,
+-18px 18px 0 #ddd,
+-19px 19px 0 #ddd,
+-20px 20px 0 #ddd;
+    
+}
+
+
+@media screen and (min-width: 768px) 
+and (max-width: 1024px) 
+and (orientation: landscape){
+    .text{
+        font-size: 30px;
+        font-weight: 800;
+        color: rgb(239, 164, 233);
+        letter-spacing: 15px;
+        transform: rotate(-15deg)skew(20deg);
+        text-shadow: -1px 1px 0 rgb(233, 213, 158),
+        -2px 2px 0 rgb(224, 214, 122),
+        -3px 3px 0 rgb(240, 225, 144),
+        -4px 4px 0 rgb(240, 241, 142),
+        -5px 5px 0 rgb(245, 253, 199),
+        -6px 6px 0 rgb(255, 254, 172),
+        -7px 7px 0 rgb(253, 255, 145),
+        -8px 8px 0 rgb(221, 221, 221),
+        -9px 9px 0 #ddd,
+        -10px 10px 0 #ddd,
+        -11px 2px 0 #ddd,
+    -12px 12px 0 #ddd,
+    -13px 13px 0 #ddd,
+    -14px 14px 0 #ddd,
+    -15px 15px 0 #ddd,
+    -16px 16px 0 #ddd,
+    -17px 17px 0 #ddd,
+    -18px 18px 0 #ddd,
+    -19px 19px 0 #ddd,
+    -20px 20px 0 #ddd;
+        
+    }
+
+    @media screen and (max-width: 768px){
+        .text{
+            font-size: 90px;
+            font-weight: 800;
+            color: rgb(236, 120, 143);
+            letter-spacing: 15px;
+            transform: rotate(-15deg)skew(20deg);
+            text-shadow: -1px 1px 0 rgb(233, 213, 158),
+            -2px 2px 0 rgb(224, 214, 122),
+            -3px 3px 0 rgb(240, 225, 144),
+            -4px 4px 0 rgb(240, 241, 142),
+            -5px 5px 0 rgb(245, 253, 199),
+            -6px 6px 0 rgb(255, 254, 172),
+            -7px 7px 0 rgb(253, 255, 145),
+            -8px 8px 0 rgb(221, 221, 221),
+            -9px 9px 0 #ddd,
+            -10px 10px 0 #ddd,
+            -11px 2px 0 #ddd,
+        -12px 12px 0 #ddd,
+        -13px 13px 0 #ddd,
+        -14px 14px 0 #ddd,
+        -15px 15px 0 #ddd,
+        -16px 16px 0 #ddd,
+        -17px 17px 0 #ddd,
+        -18px 18px 0 #ddd,
+        -19px 19px 0 #ddd,
+        -20px 20px 0 #ddd;
+            
+        }
+    }
